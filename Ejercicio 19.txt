@@ -1,0 +1,13 @@
+ ans  =
+ 
+    1.  
+ 
+-->clc
+ 
+-->n=100;
+ 
+-->A=sparse(- diag(ones(n-1,1),1) - diag(ones(n-1,1),-1) - 2 * diag(ones(n-2,1),2) - 2 * diag(ones(n-2,1),-2) + diag([4:4:n*4]));
+ 
+-->b=[1,7*ones(1,98),2]';
+ 
+-->diary(0)
