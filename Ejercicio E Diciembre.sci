@@ -1,8 +1,7 @@
 clc;
 format('e',12)
 deff('y=f1(x)','y=exp(x*cos(x))+2*x*sin(x)')
-fplot2d(0:0.01:10,f1),xgrid // En la respuesta lo he puesto sin ",xgrid"
-
+fplot2d(0:0.01:10,f1),xgrid
 [x,e,tol]=bipart(f1,2,4,100)
 x
 esp=0.5e-5;
