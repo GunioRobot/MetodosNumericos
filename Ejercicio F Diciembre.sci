@@ -12,5 +12,7 @@ function u=jf1(X)
 endfunction
 
 x=[0 0]';
-sol=newton2('f1','jf1',x,50);
+sol=newton2(f1,jf1,x,50);
 sol(1)
+
+nres=norm(f1(sol))
